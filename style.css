@@ -11,11 +11,12 @@ img{max-width:100%;display:block;}
 .hero .tagline{display:inline-block;background:rgba(255,255,255,0.9);border-radius:100px;padding:4px 16px;}
 footer p{display:inline-block;}
 .disclosure{padding:20px 24px;}
-.hero .heart-row{font-size:1.3rem;margin-bottom:6px;letter-spacing:6px;}
-.logo{font-family:'Chewy',cursive;font-weight:400;letter-spacing:1px;font-size:clamp(3.2rem,11vw,5.6rem);margin:0 0 6px;line-height:1.05;}
-.logo .dark-part{display:inline-block;color:var(--ink);text-shadow:3px 3px 0 rgba(0,0,0,0.08);animation:bounce 3.2s ease-in-out infinite;}
-.logo .pink-part{display:inline-block;color:var(--pink-hot-deep);text-shadow:3px 3px 0 rgba(235,62,133,0.2);animation:bounce 3.2s ease-in-out infinite;}
-@keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
+.hero .heart-row{display:inline-flex;justify-content:center;align-items:flex-end;gap:14px;margin-bottom:10px;background:rgba(255,255,255,0.9);border-radius:100px;padding:8px 22px;box-shadow:0 4px 14px rgba(192,24,95,0.10);}
+.hero .heart-row svg{display:block;filter:drop-shadow(0 3px 4px rgba(0,0,0,0.12));}
+.logo{font-family:'Lobster',cursive;font-size:clamp(3.2rem,10vw,5.4rem);margin:0 0 6px;line-height:1.05;}
+.logo .dark-part{display:inline-block;color:var(--ink);text-shadow:3px 3px 0 rgba(0,0,0,0.08);animation:bounce 1.4s ease-in-out infinite;}
+.logo .pink-part{display:inline-block;color:var(--pink-hot-deep);text-shadow:3px 3px 0 rgba(235,62,133,0.2);animation:bounce 1.4s ease-in-out infinite;}
+@keyframes bounce{0%,50%,100%{transform:translateY(0);}25%{transform:translateY(-22px);}}
 .hero .tagline{font-family:'Baloo 2',cursive;font-weight:600;font-size:1.1rem;color:var(--pink-hot-deep);margin:0 0 22px;}
 .hero p.bio{max-width:560px;margin:0 auto 26px;color:var(--ink);font-weight:700;font-size:1rem;line-height:1.6;}
 .socials{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;}
