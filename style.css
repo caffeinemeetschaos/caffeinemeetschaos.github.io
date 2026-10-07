@@ -78,3 +78,26 @@ footer p{margin:0 0 8px;}
 .text-card p{color:var(--ink-soft);font-weight:600;font-size:0.92rem;margin:0 0 18px;}
 .app-cta .btn + .btn{margin-left:10px;}
 @media (max-width:560px){.app-cta .btn{display:block;max-width:320px;margin:0 auto 12px;}.app-cta .btn + .btn{margin-left:auto;}}
+
+/* ---- 1-on-1 Help & Support ---- */
+.help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch;margin-top:8px;}
+@media (max-width:900px){.help-grid{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto;}}
+.help-card{position:relative;background:var(--pink-card);border-radius:24px;border:3px solid #fff;box-shadow:var(--shadow);padding:30px 24px 26px;display:flex;flex-direction:column;text-align:center;}
+.help-card--featured{border-color:var(--pink-hot);}
+.help-ribbon{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--pink-hot-deep);color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:0.8rem;padding:5px 16px;border-radius:100px;white-space:nowrap;box-shadow:0 4px 10px rgba(235,62,133,0.3);}
+.help-time{display:inline-block;align-self:center;margin:0 0 10px;padding:5px 14px;border-radius:100px;background:var(--pink-soft);color:var(--pink-hot-deep);font-family:'Baloo 2',cursive;font-weight:700;font-size:0.85rem;}
+.help-card h3{font-size:1.25rem;line-height:1.2;margin:0 0 4px;color:var(--ink);}
+.help-price{margin:0 0 10px;font-family:'Baloo 2',cursive;font-weight:800;font-size:2.6rem;line-height:1;color:var(--pink-hot-deep);}
+.help-for{margin:0 0 16px;color:var(--ink-soft);font-weight:600;font-size:0.9rem;line-height:1.5;}
+.help-plus{margin:0 0 8px;font-family:'Baloo 2',cursive;font-weight:700;font-size:0.92rem;color:var(--ink);background:#FFF8E8;border-radius:12px;padding:8px 12px;}
+.help-list{list-style:none;margin:0 0 22px;padding:0;text-align:left;flex:1;}
+.help-list li{position:relative;padding:6px 0 6px 26px;color:var(--ink-soft);font-weight:600;font-size:0.88rem;line-height:1.45;border-bottom:1px dashed var(--pink-soft);}
+.help-list li:last-child{border-bottom:none;}
+.help-list li::before{content:'♥';position:absolute;left:4px;top:6px;color:var(--pink-hot);font-size:0.85rem;}
+.help-btn{display:block;width:100%;text-align:center;font-size:1rem;padding:14px 18px;}
+.help-subtitle{text-align:center;font-size:1.4rem;margin:48px 0 18px;color:var(--ink);}
+.help-note{max-width:640px;margin:22px auto 0;}
+.help-disclaimer{max-width:640px;margin:18px auto 0;text-align:center;color:var(--ink-soft);font-weight:600;font-size:0.8rem;line-height:1.6;}
+@media (min-width:901px){.help-card h3{min-height:2.4em;display:flex;align-items:center;justify-content:center;}}
+.help-subtitle{text-shadow:0 0 6px #fff,0 0 12px #fff,0 0 18px #fff;}
+.help-disclaimer{background:rgba(255,255,255,0.9);border-radius:18px;padding:14px 20px;box-shadow:0 4px 14px rgba(192,24,95,0.10);color:var(--ink-soft);}
