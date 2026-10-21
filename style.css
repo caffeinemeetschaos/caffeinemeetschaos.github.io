@@ -101,3 +101,10 @@ footer p{margin:0 0 8px;}
 @media (min-width:901px){.help-card h3{min-height:2.4em;display:flex;align-items:center;justify-content:center;}}
 .help-subtitle{text-shadow:0 0 6px #fff,0 0 12px #fff,0 0 18px #fff;}
 .help-disclaimer{background:rgba(255,255,255,0.9);border-radius:18px;padding:14px 20px;box-shadow:0 4px 14px rgba(192,24,95,0.10);color:var(--ink-soft);}
+
+.bundle-card{position:relative;max-width:820px;margin:8px auto 34px;background:var(--pink-card);border-radius:24px;border:3px solid var(--pink-hot);box-shadow:var(--shadow);padding:30px 24px 26px;display:grid;grid-template-columns:300px 1fr;gap:24px;align-items:start;}
+.bundle-img{width:100%;height:auto;border-radius:18px;display:block;}
+.bundle-body{display:flex;flex-direction:column;text-align:center;}
+.bundle-body .help-list li strong{color:var(--ink);}
+.bundle-after{margin:0 0 18px;font-size:0.85rem;line-height:1.5;color:var(--ink-soft);font-weight:600;background:#FFF8E8;border-radius:12px;padding:10px 12px;text-align:left;}
+@media (max-width:900px){.bundle-card{grid-template-columns:1fr;max-width:520px;}.bundle-img{max-width:360px;margin:0 auto;}}
