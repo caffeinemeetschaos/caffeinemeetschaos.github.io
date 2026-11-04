@@ -8,6 +8,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Chewy&family=Lobster&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.boxes{display:flex;flex-direction:column;gap:26px;max-width:980px;margin:8px auto 0;}
+.box{background:rgba(255,255,255,0.6);border:3px solid #fff;box-shadow:var(--shadow);border-radius:30px;padding:22px 20px 24px;display:flex;flex-direction:column;gap:14px;}
+.box h2{margin:0;font-family:'Lobster',cursive;font-weight:400;font-size:2rem;color:var(--pink-hot-deep);text-align:center;}
+.tiles{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;}
+.tile{flex:0 0 calc((100% - 28px)/3);display:flex;flex-direction:column;min-width:0;background:var(--pink-card);border:2px solid var(--pink-soft);border-radius:22px;overflow:hidden;color:var(--ink);text-decoration:none;box-shadow:0 4px 0 var(--pink-soft);transition:transform .12s ease,border-color .12s ease;}
+.tile:hover{transform:translateY(-3px);border-color:var(--pink-hot);}
+.tile:focus-visible{outline:3px solid var(--ink);outline-offset:3px;}
+.tile img,.tile .tile-art{display:block;width:100%;aspect-ratio:1;object-fit:cover;object-position:top;background:var(--pink-soft);}
+.tile-body{display:flex;flex-direction:column;gap:4px;padding:12px 12px 16px;text-align:center;flex:1;justify-content:center;}
+.tile-title{font-family:'Baloo 2',cursive;font-weight:700;font-size:1.08rem;line-height:1.2;}
+.tile-sub{font-weight:600;font-size:.82rem;color:var(--ink-soft);line-height:1.35;}
+.tile-featured{border-color:var(--pink-hot);box-shadow:0 4px 0 var(--pink-hot-deep);}
+.tile-featured .tile-title{color:var(--pink-hot-deep);}
+@media (max-width:600px){.box{padding:18px 10px 20px;}.tiles{gap:8px;}.tile{flex-basis:calc((100% - 16px)/3);border-radius:14px;}.tile-body{padding:8px 6px 10px;}.tile-title{font-size:.8rem;}.tile-sub{display:none;}.box h2{font-size:1.6rem;}}
+@media (prefers-reduced-motion:reduce){.tile{transition:none;}}
+</style>
 </head>
 <body>
 
@@ -20,17 +37,6 @@
       <span class="pink-part">Chaos</span>
     </h1>
     <p class="tagline">Real Tasks. Real People. Real Money.</p>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin:0 0 24px;">
-      <a class="btn" href="https://app.ameliachores.com/onboarding?ref=AAAAC8MEDELP" target="_blank" rel="noopener" style="font-size:1.05rem; padding:14px 28px;">🏠 Sign Up for Amelia</a>
-      <a class="btn" href="https://contracted.ai/interview/4?ref=9PKQ6UMA" target="_blank" rel="noopener" style="font-size:1.05rem; padding:14px 28px;">🌍 Outside the US? Sign Up with Contracted AI</a>
-      <a class="btn" href="https://www.amazon.com/shop/adventuresthrumotherhood" target="_blank" rel="noopener" style="font-size:1.05rem; padding:14px 28px;">🎥 Buy Your Head Strap Here</a>
-      <a class="btn" href="free-guide/" style="font-size:1.05rem; padding:14px 28px;">📗 Free Guide For Training AI</a>
-      <a class="btn" href="playbook.html" style="font-size:1.05rem; padding:14px 28px;">📘 Buy Training AI: The Playbook</a>
-      <a class="btn" href="https://zef9bq-ih.myshopify.com/collections/merch?sca_ref=12449417.cR5MT0m5QMUjOfIJ" target="_blank" rel="noopener" style="font-size:1.05rem; padding:14px 28px;">🛍️ Shop Our Merch</a>
-      <a class="btn" href="https://af.uppromote.com/zef9bq-ih/register" target="_blank" rel="noopener" style="font-size:1.05rem; padding:14px 28px;">💸 Become an Affiliate to Sell the Playbook</a>
-      <a class="btn" href="#one-on-one" style="font-size:1.05rem; padding:14px 28px;">🤝 1-on-1 Help</a>
-      <a class="btn" href="#espanol" style="font-size:1.05rem; padding:14px 28px;">🌎 Habla Español</a>
-    </div>
     <p class="bio">I'm Jamie! These are the apps I actually use to get paid for the everyday stuff I'm already doing around the house - cleaning, cooking, laundry and more. No fake promises, just real ways to bring in extra money from home.</p>
     <div class="socials">
       <a href="https://www.tiktok.com/@caffeinemeetschaos?_r=1&amp;_t=ZP-99qR03rriyU" target="_blank" rel="noopener">TikTok</a>
@@ -41,6 +47,42 @@
       <a href="#disclosure" class="meta-link">Affiliate Disclosure</a>
     </div>
   </section>
+
+  <div class="boxes">
+    <section class="box" aria-labelledby="box-signup">
+      <h2 id="box-signup"><span aria-hidden="true">✍️</span> Sign Up</h2>
+      <div class="tiles">
+        <a class="tile" href="https://app.ameliachores.com/onboarding?ref=AAAAC8MEDELP" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/amelia-complete-guide-jamie.png?v=1792120850" alt="Amelia — get paid for the chores you already do" loading="lazy"><span class="tile-body"><span class="tile-title">Sign Up for Amelia</span><span class="tile-sub">Get paid to record everyday chores</span></span></a>
+        <a class="tile" href="https://contracted.ai/interview/4?ref=9PKQ6UMA" target="_blank" rel="noopener"><img src="contracted-ai.png" alt="Contracted AI" loading="lazy"><span class="tile-body"><span class="tile-title">Outside the US? Contracted AI</span><span class="tile-sub">Sign up with my link</span></span></a>
+      </div>
+    </section>
+
+    <section class="box" aria-labelledby="box-guides">
+      <h2 id="box-guides"><span aria-hidden="true">📚</span> Guides</h2>
+      <div class="tiles">
+        <a class="tile tile-featured" href="https://zef9bq-ih.myshopify.com/collections/guides?sca_ref=12449417.cR5MT0m5QMUjOfIJ" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/Tasking_Between_Tantrums.png?v=1792100766" alt="Tasking Between Tantrums guide cover" loading="lazy"><span class="tile-body"><span class="tile-title">Shop Our Guides</span><span class="tile-sub">Guides &amp; cleaning calendars</span></span></a>
+        <a class="tile" href="playbook.html"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/Training_AI_main_page.png?v=1792001838" alt="Training AI: The Playbook cover" loading="lazy"><span class="tile-body"><span class="tile-title">Training AI: The Playbook</span><span class="tile-sub">The full step-by-step guide</span></span></a>
+        <a class="tile" href="free-guide/"><img src="free-guide/01-cover.jpg" alt="Free Amelia guide cover with Bean and Pop" loading="lazy"><span class="tile-body"><span class="tile-title">Free Guide For Training AI</span><span class="tile-sub">Start here if you're new</span></span></a>
+      </div>
+    </section>
+
+    <section class="box" aria-labelledby="box-help">
+      <h2 id="box-help"><span aria-hidden="true">🤝</span> Help &amp; Community</h2>
+      <div class="tiles">
+        <a class="tile" href="#one-on-one"><img src="https://mamaneedscaffeine.github.io/caffeinatedmamas/session-30.jpg" alt="1-on-1 help session" loading="lazy"><span class="tile-body"><span class="tile-title">1-on-1 Help</span><span class="tile-sub">Personal sessions from $40</span></span></a>
+        <a class="tile" href="https://af.uppromote.com/zef9bq-ih/register" target="_blank" rel="noopener"><img src="https://mamaneedscaffeine.github.io/caffeinatedmamas/affiliate.jpg" alt="Become an affiliate and earn selling the playbook" loading="lazy"><span class="tile-body"><span class="tile-title">Become an Affiliate</span><span class="tile-sub">Earn selling the playbook</span></span></a>
+        <a class="tile" href="#espanol"><svg class="tile-art" viewBox="0 0 200 200" role="img" aria-label="¿Hablas Español?"><rect width="200" height="200" fill="#FFD6E8"/><circle cx="100" cy="88" r="52" fill="#7EC8E3"/><path d="M70 58c10 4 14 14 26 12s14 10 6 18-20 2-24 12 6 18-2 24-20-4-24-14c-4-12 2-30 18-52z" fill="#6FA83A"/><path d="M118 50c8 6 22 6 26 18s-6 20-14 18-10 8-4 16 16 12 10 22c-18 6-30-10-26-26s-10-14-8-26 8-18 16-22z" fill="#6FA83A"/><circle cx="100" cy="88" r="52" fill="none" stroke="#C0185F" stroke-width="4"/><text x="100" y="172" text-anchor="middle" font-family="Baloo 2, Quicksand, sans-serif" font-weight="800" font-size="24" fill="#C0185F">¿Hablas Español?</text></svg><span class="tile-body"><span class="tile-title">Habla Español</span><span class="tile-sub">Victoria can help</span></span></a>
+      </div>
+    </section>
+
+    <section class="box" aria-labelledby="box-shop">
+      <h2 id="box-shop"><span aria-hidden="true">🛍️</span> Shop</h2>
+      <div class="tiles">
+        <a class="tile" href="https://www.amazon.com/shop/adventuresthrumotherhood" target="_blank" rel="noopener"><img src="free-guide/05-head-straps.jpg" alt="Bean and Pop wearing their phone head straps" loading="lazy"><span class="tile-body"><span class="tile-title">Buy Your Head Strap Here</span><span class="tile-sub">What Bean &amp; Pop use to record</span></span></a>
+        <a class="tile" href="https://zef9bq-ih.myshopify.com/collections/merch?sca_ref=12449417.cR5MT0m5QMUjOfIJ" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/09a76f0cf32d7cf7857f0c18e2eccdae.jpg?v=1792289526" alt="Halloween pajamas from our merch shop" loading="lazy"><span class="tile-body"><span class="tile-title">Shop Our Merch</span><span class="tile-sub">PJs, slippers &amp; more</span></span></a>
+      </div>
+    </section>
+  </div>
 
   <h2 class="section-title" id="ai-training">Get Paid to Train AI 💗</h2>
   <p class="section-sub">Tap an app below to see all the details - pay, requirements, and how to get started.</p>
