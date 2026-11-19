@@ -24,6 +24,20 @@
 .tile-featured .tile-title{color:var(--pink-hot-deep);}
 @media (max-width:600px){.box{padding:18px 10px 20px;}.tiles{gap:8px;}.tile{flex-basis:calc((100% - 16px)/3);border-radius:14px;}.tile-body{padding:8px 6px 10px;}.tile-title{font-size:.8rem;}.tile-sub{display:none;}.box h2{font-size:1.6rem;}}
 @media (prefers-reduced-motion:reduce){.tile{transition:none;}}
+.tiles-4 .tile{flex-basis:calc((100% - 42px)/4);}
+.hub-lead{margin:0;text-align:center;font-weight:700;color:var(--ink-soft);}
+.hub .tile-title{font-size:1.2rem;color:var(--pink-hot-deep);}
+.hub .tile-cta{font-family:'Baloo 2',cursive;font-weight:700;font-size:.85rem;color:var(--ink);}
+.panel{display:none;scroll-margin-top:16px;}
+.panel:target{display:flex;}
+.panel:target h2{animation:panelIn .35s ease;}
+@keyframes panelIn{from{opacity:.3;transform:translateY(6px);}to{opacity:1;transform:none;}}
+.panel-note{margin:0;text-align:center;font-weight:600;font-size:.92rem;color:var(--ink-soft);}
+.back-row{display:flex;justify-content:center;}
+.chip{padding:8px 16px;border-radius:100px;background:#fff;border:2px solid var(--pink-soft);font-family:'Baloo 2',cursive;font-weight:600;font-size:.88rem;color:var(--pink-hot-deep);text-decoration:none;}
+.chip:hover{background:var(--pink-soft);}
+@media (max-width:600px){.tiles-4 .tile{flex-basis:calc((100% - 8px)/2);}.hub .tile-title{font-size:.85rem;}.hub .tile-cta{display:none;}}
+@media (prefers-reduced-motion:reduce){.panel:target h2{animation:none;}}
 </style>
 </head>
 <body>
@@ -49,39 +63,69 @@
   </section>
 
   <div class="boxes">
-    <section class="box" aria-labelledby="box-signup">
-      <h2 id="box-signup"><span aria-hidden="true">✍️</span> Sign Up</h2>
-      <div class="tiles">
-        <a class="tile" href="https://app.ameliachores.com/onboarding?ref=AAAAC8MEDELP" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/amelia-complete-guide-jamie.png?v=1792120850" alt="Amelia — get paid for the chores you already do" loading="lazy"><span class="tile-body"><span class="tile-title">Sign Up for Amelia</span><span class="tile-sub">Get paid to record everyday chores</span></span></a>
-        <a class="tile" href="https://contracted.ai/interview/4?ref=9PKQ6UMA" target="_blank" rel="noopener"><img src="contracted-ai.png" alt="Contracted AI" loading="lazy"><span class="tile-body"><span class="tile-title">Outside the US? Contracted AI</span><span class="tile-sub">Sign up with my link</span></span></a>
-      </div>
-    </section>
+  <section class="box hub" id="start" aria-labelledby="start-title">
+    <h2 id="start-title"><span aria-hidden="true">☕</span> Where do you want to start?</h2>
+    <p class="hub-lead">Tap a block to see everything inside it.</p>
+    <div class="tiles">
+        <a class="tile" href="#train"><img src="https://mamaneedscaffeine.github.io/train-ai-banner.png" alt="Get paid to train AI" loading="lazy"><span class="tile-body"><span class="tile-title">Sign Up to Train AI</span><span class="tile-sub">Amelia &amp; Contracted AI</span><span class="tile-cta">Tap to open →</span></span></a>
+        <a class="tile" href="#guides"><img src="Guides.png" alt="Shop Our Guides: cleaning guides and tasking guides" loading="lazy"><span class="tile-body"><span class="tile-title">Guides</span><span class="tile-sub">Free guide, playbook &amp; more</span><span class="tile-cta">Tap to open →</span></span></a>
+        <a class="tile" href="#help"><img src="1%20on%201%20help.png" alt="1 on 1 Help: personalized support" loading="lazy"><span class="tile-body"><span class="tile-title">Need Help?</span><span class="tile-sub">1-on-1 sessions &amp; Spanish help</span><span class="tile-cta">Tap to open →</span></span></a>
+        <a class="tile" href="#shop"><img src="free-guide/05-head-straps.jpg" alt="Bean and Pop wearing their phone head straps" loading="lazy"><span class="tile-body"><span class="tile-title">Shop</span><span class="tile-sub">Head strap &amp; merch</span><span class="tile-cta">Tap to open →</span></span></a>
+        <a class="tile" href="#earn"><img src="https://mamaneedscaffeine.github.io/shopping-banner.png" alt="More free ways to earn money" loading="lazy"><span class="tile-body"><span class="tile-title">More Free Ways to Earn</span><span class="tile-sub">Cash back apps</span><span class="tile-cta">Tap to open →</span></span></a>
+    </div>
+  </section>
 
-    <section class="box" aria-labelledby="box-guides">
-      <h2 id="box-guides"><span aria-hidden="true">📚</span> Guides</h2>
-      <div class="tiles">
-        <a class="tile tile-featured" href="https://zef9bq-ih.myshopify.com/collections/guides?sca_ref=12449417.cR5MT0m5QMUjOfIJ" target="_blank" rel="noopener"><img src="Guides.png" alt="Shop Our Guides: cleaning guides and tasking guides" loading="lazy"><span class="tile-body"><span class="tile-title">Shop Our Guides</span><span class="tile-sub">Guides &amp; cleaning calendars</span></span></a>
-        <a class="tile" href="playbook.html"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/Training_AI_main_page.png?v=1792001838" alt="Training AI: The Playbook cover" loading="lazy"><span class="tile-body"><span class="tile-title">Training AI: The Playbook</span><span class="tile-sub">The full step-by-step guide</span></span></a>
+  <section class="box panel" id="train" aria-labelledby="train-title">
+    <h2 id="train-title"><span aria-hidden="true">✍️</span> Sign Up to Train AI</h2>
+    <p class="panel-note">Read the details first: pay, head straps and FAQs. My sign-up link is on each page.</p>
+    <div class="tiles">
+        <a class="tile" href="amelia.html"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/amelia-complete-guide-jamie.png?v=1792120850" alt="Amelia — get paid for the chores you already do" loading="lazy"><span class="tile-body"><span class="tile-title">Amelia</span><span class="tile-sub">US: get paid to record everyday chores</span></span></a>
+        <a class="tile" href="contracted-ai-info.html"><img src="contracted-ai.png" alt="Contracted AI" loading="lazy"><span class="tile-body"><span class="tile-title">Contracted AI</span><span class="tile-sub">Outside the US? Start here</span></span></a>
+    </div>
+    <div class="back-row"><a class="chip" href="#start">← Back to all options</a></div>
+  </section>
+
+  <section class="box panel" id="guides" aria-labelledby="guides-title">
+    <h2 id="guides-title"><span aria-hidden="true">📚</span> Guides</h2>
+    <div class="tiles tiles-4">
         <a class="tile" href="free-guide/"><img src="free-guide/01-cover.jpg" alt="Free Amelia guide cover with Bean and Pop" loading="lazy"><span class="tile-body"><span class="tile-title">Free Guide For Training AI</span><span class="tile-sub">Start here if you're new</span></span></a>
-      </div>
-    </section>
-
-    <section class="box" aria-labelledby="box-help">
-      <h2 id="box-help"><span aria-hidden="true">🤝</span> Help &amp; Community</h2>
-      <div class="tiles">
-        <a class="tile" href="#one-on-one"><img src="1%20on%201%20help.png" alt="1 on 1 Help: personalized support" loading="lazy"><span class="tile-body"><span class="tile-title">1-on-1 Help</span><span class="tile-sub">Personal sessions from $40</span></span></a>
+        <a class="tile" href="playbook.html"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/Training_AI_main_page.png?v=1792001838" alt="Training AI: The Playbook cover" loading="lazy"><span class="tile-body"><span class="tile-title">Training AI: The Playbook</span><span class="tile-sub">The full step-by-step guide</span></span></a>
+        <a class="tile tile-featured" href="https://zef9bq-ih.myshopify.com/collections/guides?sca_ref=12449417.cR5MT0m5QMUjOfIJ" target="_blank" rel="noopener"><img src="Guides.png" alt="Shop Our Guides: cleaning guides and tasking guides" loading="lazy"><span class="tile-body"><span class="tile-title">Shop Our Guides</span><span class="tile-sub">Guides &amp; cleaning calendars</span></span></a>
         <a class="tile" href="https://af.uppromote.com/zef9bq-ih/register" target="_blank" rel="noopener"><img src="https://mamaneedscaffeine.github.io/caffeinatedmamas/affiliate.jpg" alt="Become an affiliate and earn selling the playbook" loading="lazy"><span class="tile-body"><span class="tile-title">Become an Affiliate</span><span class="tile-sub">Earn selling the playbook</span></span></a>
-        <a class="tile" href="#espanol"><svg class="tile-art" viewBox="0 0 200 200" role="img" aria-label="¿Hablas Español?"><rect width="200" height="200" fill="#FFD6E8"/><circle cx="100" cy="88" r="52" fill="#7EC8E3"/><path d="M70 58c10 4 14 14 26 12s14 10 6 18-20 2-24 12 6 18-2 24-20-4-24-14c-4-12 2-30 18-52z" fill="#6FA83A"/><path d="M118 50c8 6 22 6 26 18s-6 20-14 18-10 8-4 16 16 12 10 22c-18 6-30-10-26-26s-10-14-8-26 8-18 16-22z" fill="#6FA83A"/><circle cx="100" cy="88" r="52" fill="none" stroke="#C0185F" stroke-width="4"/><text x="100" y="172" text-anchor="middle" font-family="Baloo 2, Quicksand, sans-serif" font-weight="800" font-size="24" fill="#C0185F">¿Hablas Español?</text></svg><span class="tile-body"><span class="tile-title">Habla Español</span><span class="tile-sub">Victoria can help</span></span></a>
-      </div>
-    </section>
+    </div>
+    <div class="back-row"><a class="chip" href="#start">← Back to all options</a></div>
+  </section>
 
-    <section class="box" aria-labelledby="box-shop">
-      <h2 id="box-shop"><span aria-hidden="true">🛍️</span> Shop</h2>
-      <div class="tiles">
+  <section class="box panel" id="help" aria-labelledby="help-title">
+    <h2 id="help-title"><span aria-hidden="true">🤝</span> Need Help?</h2>
+    <div class="tiles tiles-4">
+        <a class="tile tile-featured" href="#one-on-one"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/Training_AI_main_page.png?v=1792001838" alt="Training AI: The Playbook plus a 30-minute session" loading="lazy"><span class="tile-body"><span class="tile-title">Playbook + 30-Min — $125</span><span class="tile-sub">Best value bundle</span></span></a>
+        <a class="tile" href="#one-on-one"><img src="1%20on%201%20help.png" alt="1 on 1 Help: personalized support" loading="lazy"><span class="tile-body"><span class="tile-title">30-Minute Session — $40</span><span class="tile-sub">Personalized tasking help</span></span></a>
+        <a class="tile" href="#one-on-one"><img src="https://mamaneedscaffeine.github.io/caffeinatedmamas/session-60.jpg" alt="60 Minute Personalized Session" loading="lazy"><span class="tile-body"><span class="tile-title">60-Minute Session — $60</span><span class="tile-sub">Everything in 30 min + referral strategy</span></span></a>
+        <a class="tile" href="#espanol"><svg class="tile-art" viewBox="0 0 200 200" role="img" aria-label="¿Hablas Español?"><rect width="200" height="200" fill="#FFD6E8"/><circle cx="100" cy="88" r="52" fill="#7EC8E3"/><path d="M70 58c10 4 14 14 26 12s14 10 6 18-20 2-24 12 6 18-2 24-20-4-24-14c-4-12 2-30 18-52z" fill="#6FA83A"/><path d="M118 50c8 6 22 6 26 18s-6 20-14 18-10 8-4 16 16 12 10 22c-18 6-30-10-26-26s-10-14-8-26 8-18 16-22z" fill="#6FA83A"/><circle cx="100" cy="88" r="52" fill="none" stroke="#C0185F" stroke-width="4"/><text x="100" y="172" text-anchor="middle" font-family="Baloo 2, Quicksand, sans-serif" font-weight="800" font-size="24" fill="#C0185F">¿Hablas Español?</text></svg><span class="tile-body"><span class="tile-title">Habla Español</span><span class="tile-sub">Victoria can help</span></span></a>
+    </div>
+    <div class="back-row"><a class="chip" href="#start">← Back to all options</a></div>
+  </section>
+
+  <section class="box panel" id="shop" aria-labelledby="shop-title">
+    <h2 id="shop-title"><span aria-hidden="true">🛍️</span> Shop</h2>
+    <div class="tiles">
         <a class="tile" href="https://www.amazon.com/shop/adventuresthrumotherhood" target="_blank" rel="noopener"><img src="free-guide/05-head-straps.jpg" alt="Bean and Pop wearing their phone head straps" loading="lazy"><span class="tile-body"><span class="tile-title">Buy Your Head Strap Here</span><span class="tile-sub">What Bean &amp; Pop use to record</span></span></a>
-        <a class="tile" href="https://zef9bq-ih.myshopify.com/collections/merch?sca_ref=12449417.cR5MT0m5QMUjOfIJ" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/09a76f0cf32d7cf7857f0c18e2eccdae.jpg?v=1792289526" alt="Halloween pajamas from our merch shop" loading="lazy"><span class="tile-body"><span class="tile-title">Shop Our Merch</span><span class="tile-sub">PJs, slippers &amp; more</span></span></a>
-      </div>
-    </section>
+        <a class="tile" href="https://zef9bq-ih.myshopify.com/collections/merch?sca_ref=12449417.cR5MT0m5QMUjOfIJ" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/1002/6323/1779/files/09a76f0cf32d7cf7857f0c18e2eccdae.jpg?v=1792289526" alt="Pajamas from our merch shop" loading="lazy"><span class="tile-body"><span class="tile-title">Shop Our Merch</span><span class="tile-sub">PJs, slippers &amp; more</span></span></a>
+    </div>
+    <div class="back-row"><a class="chip" href="#start">← Back to all options</a></div>
+  </section>
+
+  <section class="box panel" id="earn" aria-labelledby="earn-title">
+    <h2 id="earn-title"><span aria-hidden="true">💸</span> More Free Ways to Earn</h2>
+    <p class="panel-note">Cash back and gift cards for things you already buy.</p>
+    <div class="tiles">
+        <a class="tile" href="https://referral.fetch.com/vvv3/referralqr?code=D9VG98" target="_blank" rel="noopener"><img src="https://mamaneedscaffeine.github.io/badge-fetch.png" alt="Fetch" loading="lazy"><span class="tile-body"><span class="tile-title">Fetch</span><span class="tile-sub">Code: D9VG98</span></span></a>
+        <a class="tile" href="https://ibotta.onelink.me/iUfE/1005cd3f?friend_code=vydonlw" target="_blank" rel="noopener"><img src="https://mamaneedscaffeine.github.io/badge-ibotta.png" alt="Ibotta" loading="lazy"><span class="tile-body"><span class="tile-title">Ibotta</span><span class="tile-sub">Code: vydonlw</span></span></a>
+        <a class="tile" href="https://www.rakuten.com/r/JAMIEZ413" target="_blank" rel="noopener"><img src="https://mamaneedscaffeine.github.io/badge-rakuten.png" alt="Rakuten" loading="lazy"><span class="tile-body"><span class="tile-title">Rakuten</span><span class="tile-sub">Cash back online</span></span></a>
+    </div>
+    <div class="back-row"><a class="chip" href="#start">← Back to all options</a></div>
+  </section>
   </div>
 
   <h2 class="section-title" id="ai-training">Get Paid to Train AI 💗</h2>
