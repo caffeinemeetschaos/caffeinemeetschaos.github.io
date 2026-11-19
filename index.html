@@ -38,6 +38,8 @@
 .chip:hover{background:var(--pink-soft);}
 @media (max-width:600px){.tiles-4 .tile{flex-basis:calc((100% - 8px)/2);}.hub .tile-title{font-size:.85rem;}.hub .tile-cta{display:none;}}
 @media (prefers-reduced-motion:reduce){.panel:target h2{animation:none;}}
+.tile-crop{display:block;position:relative;width:100%;aspect-ratio:1;overflow:hidden;background:#FFF6FA;}
+.tile .tile-crop img{position:absolute;left:-2.871%;top:-4.785%;width:105.742%;max-width:none;height:auto;aspect-ratio:auto;object-fit:fill;}
 </style>
 </head>
 <body>
@@ -70,7 +72,7 @@
         <a class="tile" href="#train"><img src="https://mamaneedscaffeine.github.io/train-ai-banner.png" alt="Get paid to train AI" loading="lazy"><span class="tile-body"><span class="tile-title">Sign Up to Train AI</span><span class="tile-sub">Amelia &amp; Contracted AI</span><span class="tile-cta">Tap to open →</span></span></a>
         <a class="tile" href="#guides"><img src="Guides.png" alt="Shop Our Guides: cleaning guides and tasking guides" loading="lazy"><span class="tile-body"><span class="tile-title">Guides</span><span class="tile-sub">Free guide, playbook &amp; more</span><span class="tile-cta">Tap to open →</span></span></a>
         <a class="tile" href="#help"><img src="1%20on%201%20help.png" alt="1 on 1 Help: personalized support" loading="lazy"><span class="tile-body"><span class="tile-title">Need Help?</span><span class="tile-sub">1-on-1 sessions &amp; Spanish help</span><span class="tile-cta">Tap to open →</span></span></a>
-        <a class="tile" href="#shop"><img src="https://mamaneedscaffeine.github.io/merch-banner.png" alt="Shop my merch: shirts, hoodies, hats and tumblers" loading="lazy"><span class="tile-body"><span class="tile-title">Shop</span><span class="tile-sub">Head strap &amp; merch</span><span class="tile-cta">Tap to open →</span></span></a>
+        <a class="tile" href="#shop"><span class="tile-crop"><img src="Purchase%20merch%20and%20head%20strap.png" alt="Purchase the head strap and merch" loading="lazy"></span><span class="tile-body"><span class="tile-title">Purchase</span><span class="tile-sub">the Head Strap &amp; Merch</span><span class="tile-cta">Tap to open →</span></span></a>
         <a class="tile" href="#earn"><img src="https://mamaneedscaffeine.github.io/shopping-banner.png" alt="More free ways to earn money" loading="lazy"><span class="tile-body"><span class="tile-title">More Free Ways to Earn</span><span class="tile-sub">Cash back apps</span><span class="tile-cta">Tap to open →</span></span></a>
     </div>
   </section>
